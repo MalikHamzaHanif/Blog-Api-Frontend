@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Header from './components/Header/Header'
+import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import { Outlet, useNavigate } from 'react-router-dom'
 import { getUserData } from './app/feature/authSlice/authApi';
