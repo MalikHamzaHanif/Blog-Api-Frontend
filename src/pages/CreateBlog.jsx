@@ -34,6 +34,7 @@ function CreateBlog() {
                 headers: {
                     authorization: token
                 },
+                credentials:"include",
                 body: formData
             });
             const resData = await res.json();

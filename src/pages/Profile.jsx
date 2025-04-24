@@ -313,6 +313,7 @@ function UpdateBlog({ title, content, category, imageurl, _id }) {
         headers: {
           authorization: token
         },
+        credentials:"include",
         body: formData
       })
       const resData = await res.json()
