@@ -29,20 +29,20 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: "/about",
+        path: "about",
         element: <About />
       },
       {
-        path: "/services",
+        path: "services",
         element: <Services />
       },
       {
-        path:"/forgotpassword",
+        path:"forgotpassword",
         element:<ForgotPassword/>
       
       },
       {
-        path:"/forgotpassword/:id/:token",
+        path:"forgotpassword/:id/:token",
         element:<ResetPassword/>
       
       },
