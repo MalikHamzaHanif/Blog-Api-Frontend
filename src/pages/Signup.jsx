@@ -13,10 +13,9 @@ function Signup() {
     setSuccessMsg("");
     try {
       const userData = await registerUser(data);
-      console.log("here is userdat",userData);
       
       if (userData.success === true) {
-        setSuccessMsg(userData.data.msg);
+        setSuccessMsg(userData.data.data.msg);
       } else {
     throw new Error(userData.message)
       }
