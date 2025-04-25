@@ -19,13 +19,13 @@ function Signin() {
         localStorage.setItem("x-auth-token", `Bearer ${userData.data.data.user.token}`)
         dispatch(login({ userData: userData.data.data.user }))
       } else {
-        
+
         throw new Error(userData.message)
       }
     } catch (err) {
-      
+
       setError(err.message);
-      
+
     }
   }
 
@@ -95,7 +95,7 @@ function Signin() {
           <p>
             Forgot Passoword?{" "}
             <Link to="/forgotpassword" className="text-blue-600 hover:underline">
-             Click Here
+              Click Here
             </Link>
           </p>
         </div>
