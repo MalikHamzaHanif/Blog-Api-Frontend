@@ -17,6 +17,7 @@ import CreateBlog from './pages/CreateBlog.jsx'
 import ForgotPassword from './pages/ForgotPassword.jsx'
 import ResetPassword from './pages/ResetPassword.jsx'
 import NotFound from './pages/NotFound.jsx'
+import Emailverification from './pages/Emailverification.jsx'
 
 
 const router = createBrowserRouter([
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
         path:"forgotpassword/:id/:token",
         element:<ResetPassword/>
       
+      },
+      {
+        path:"api/v1/user/:id/verify/:token",
+        element:<Emailverification/>
       },
       {
         path: "register",
